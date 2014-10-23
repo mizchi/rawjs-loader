@@ -1,14 +1,14 @@
-# raw loader for webpack
+# rawjs loader for webpack
 
 ## Installation
 
-`npm install raw-loader`
+`npm install rawjs-loader`
 
 ## Usage
 
 ``` javascript
-var fileContent = require("raw!./file.txt");
-// => returns file.txt content as string
+require("rawjs!./foo.js");
+// => eval foo.js without common.js system
 ```
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
